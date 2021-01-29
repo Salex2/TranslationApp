@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using MyTranslator.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace MyTranslator
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
+            //instead of mainWindow launch TranslatorViewModel; override on startup to do that
             DisplayRootViewFor<TranslatorViewModel>();
         }
     }
