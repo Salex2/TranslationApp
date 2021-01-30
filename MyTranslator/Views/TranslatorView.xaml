@@ -34,7 +34,9 @@
             </ComboBox>
         </StackPanel>
 
-        <TextBox x:Name="Input" Grid.Column="1"
+        <TextBox  x:Name="Input"
+                  AcceptsReturn="True" TextWrapping="Wrap"
+                  Grid.Column="1"
                  Grid.Row="2"
                  Margin="8"
                  BorderBrush="Gray"
@@ -55,6 +57,8 @@
 
         <TextBox x:Name="Output" Grid.Column="2"
                  Margin="8"
+                  AcceptsReturn="True" TextWrapping="Wrap"
+                 
                  Grid.Row="2"
                  BorderBrush="Gray"
                  BorderThickness="3"></TextBox>

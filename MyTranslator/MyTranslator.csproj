@@ -113,5 +113,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TranslationLibrary\TranslationLibrary.csproj">
+      <Project>{050DB8D7-0C49-4867-B90A-DC3F2A8347AD}</Project>
+      <Name>TranslationLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
