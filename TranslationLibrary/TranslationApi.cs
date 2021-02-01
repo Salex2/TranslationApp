@@ -10,45 +10,46 @@ namespace TranslationLibrary
     {
         public static string Translate(string input, string fromLanguage, string toLanguage)
         {
-            //to do a switch
+
             string output = "";
+
             if (fromLanguage == "English" && toLanguage == "French")
             {
-              output = EnglishToFrench.EnglezaFranceza(input);
-            }
-
-            if (fromLanguage == "English" && toLanguage == "Spanish")
-            {
-                
+             return  output = EnglishToFrench.EnglezaFranceza(input);
             }
 
             if (fromLanguage == "French" && toLanguage == "English")
             {
-
+                return output = FrenchToEnglish.FrancezaEngleza(input);
             }
 
-            if (fromLanguage == "French" && toLanguage == "Spanish")
+            if (fromLanguage == "English" && toLanguage == "Spanish")
             {
-
+                return output = EnglishToSpanish.EnglezaSpaniola(input);
             }
 
             if (fromLanguage == "Spanish" && toLanguage == "English")
             {
+                return output = SpanishToEnglish.SpaniolaEngleza(input);
+            }
 
+            if (fromLanguage == "French" && toLanguage == "Spanish")
+            {
+                return output = FrenchToSpanish.FrancezaSpaniola(input);
             }
 
             if (fromLanguage == "Spanish" && toLanguage == "French")
             {
-
+                return output = SpanishToFrench.SpaniolaFranceza(input);
             }
 
 
 
             return output;
-            
+
 
         }
 
-        
+
     }
 }

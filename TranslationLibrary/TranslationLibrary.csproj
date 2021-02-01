@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseTranslation.cs" />
+    <Compile Include="Dictionaries.cs" />
     <Compile Include="EnglishToFrench.cs" />
+    <Compile Include="EnglishToSpanish.cs" />
+    <Compile Include="FrenchToEnglish.cs" />
+    <Compile Include="FrenchToSpanish.cs" />
+    <Compile Include="SpanishToEnglish.cs" />
+    <Compile Include="SpanishToFrench.cs" />
     <Compile Include="TranslationApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

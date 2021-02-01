@@ -44,6 +44,8 @@ namespace MyTranslator.ViewModels
             }
         }
 
+        
+
 
         //what is selected in Tolanguage is selected
         private string _selectedtoLanguage;
@@ -76,7 +78,8 @@ namespace MyTranslator.ViewModels
             {
                 bool output = false;
 
-                if (!String.IsNullOrWhiteSpace(Input) && SelectedFromLanguage != null && SelectedToLanguage != null)
+                if (!String.IsNullOrWhiteSpace(Input) && SelectedFromLanguage != null && SelectedToLanguage != null
+                    && SelectedFromLanguage!=SelectedToLanguage)
                 {
                     output = true;
                 }

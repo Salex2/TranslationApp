@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace TranslationLibrary
 {
-    //internal class accesible only in TranslationLibrary
+   
     class EnglishToFrench
     {
+        //here i tried to use directly BaseTranslatioClass
+       // public static string EnglezaFranceza(string input)
+      //  {
+       //     return BaseTranslation.LanguageToLanguage(input, EngToFr);
+     //   }
 
 
         public static string EnglezaFranceza(string input)
@@ -26,23 +31,24 @@ namespace TranslationLibrary
         }
 
 
-        private static string EngToFrench(string EngWord)
+        public static string EngToFrench(string EnglishWord)
         {
-            string key1 = EngWord;
-
-
-            if (!EngToFr.ContainsKey(key1)) return EngWord;
+          
+            
+            if (!EngToFr.ContainsKey(EnglishWord)) return EnglishWord;
             else
             {
-                return EngToFr[key1];
+                return EngToFr[EnglishWord];
             }
         }
 
-        private static Dictionary<string, string> EngToFr = new Dictionary<string, string>()
+            private static readonly Dictionary<string, string> EngToFr = new Dictionary<string, string>()
             {
-            //En
-            //I am happy for them  
-            //Je suis heureux pour eux
+                //am gasit key "home"-> fac query pt franceza spaniola
+                //She is a girl
+                //Elle est une fille
+                { "home", "maison" },
+                { "plane", "avion" },
                 { "i", "je" },
                 { "happy", "heureux" },
                 { "am", "suis" },
@@ -50,16 +56,17 @@ namespace TranslationLibrary
                 { "to", "à" },
                 { "of", "de" },
                 { "and", "et" },
-                 { "a", "un" },
+                { "a", "une" },
                 { "in", "dans" },
                 { "that", "cette" },
-                 { "have", "avoir" },
+                { "She", "elle" },
+                { "have", "avoir" },
                 { "has", "a" },
                 { "I", "je" },
-                 { "it", "il" },
+                { "it", "il" },
                 { "for", "pour" },
                 { "not", "ne pas" },
-                 { "on", "sur" },
+                { "on", "sur" },
                 { "with", "avec" },
                 { "he", "il" },
                 { "as", "comme" },
@@ -68,16 +75,17 @@ namespace TranslationLibrary
                 { "at", "à" },
                 { "this", "cette" },
                 { "but", "mais" },
-                 { "his", "sa" },
+                { "his", "sa" },
                 { "by", "par" },
                 { "from", "du" },
-                 { "they", "ils" },
+                { "they", "ils" },
                 { "we", "nous" },
                 { "say", "dire" },
-                 { "her", "sa" },
+                { "is", "est" },
+                { "her", "sa" },
                 { "she", "elle" },
                 { "or", "ou" },
-                 { "an", "une" },
+                { "an", "une" },
                 { "will", "volonté" },
                 { "my", "mon" },
                 { "one", "une " },
@@ -89,13 +97,14 @@ namespace TranslationLibrary
                 { "so", "donc" },
                 { "up", "haut" },
                 { "if", "si" },
-                 { "who", "qui " },
+                { "girl", "fille" },
+                { "who", "qui " },
                 { "get", "obtenir " },
                 { "wich", "qui" },
-                 { "go", "aller" },
+                { "go", "aller" },
                 { "me", "moi" },
                 { "when", "quand" },
-                 { "make", "faire" },
+                { "make", "faire" },
                 { "can", "pouvez" },
                 { "like", "comme" },
                 { "time", "temps" },
@@ -106,30 +115,31 @@ namespace TranslationLibrary
                 { "take", "prendre" },
                 { "people", "gens" },
                 { "into", "dans" },
-                 { "year", "an" },
+                { "year", "an" },
                 { "your", "votre" },
                 { "good", "bien" },
-                 { "some", "certains" },
+                { "some", "certains" },
                 { "could", "pourrait" },
                 { "them", "eux" },
-                 { "other", "autre" },
+                { "other", "autre" },
                 { "than", "que" },
                 { "now", "maintenant" },
-                 { "look", "regardez" },
+                { "look", "regardez" },
                 { "only", "seulement" },
                 { "come", "viens" },
                 { "back", "arrière" },
                  { "also", "aussi " },
                 { "think", "pense" },
                 { "over", "grand" },
-                 { "after", "apres" },
+                { "after", "apres" },
                 { "how", "comment" },
                 { "same", "même" },
                 { "want", "voudrais" },
-                 { "because", "car" },
+                { "because", "car" },
 
 
         };
     }
 }
+
 
